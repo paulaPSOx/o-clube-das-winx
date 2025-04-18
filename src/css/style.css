@@ -1,0 +1,385 @@
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #961654, #5408be, #0689aa);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #ff91c7, #9b65ff);
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(135deg, #5e1639, #30046e, #04596e);
+    border-radius: 10px;
+}
+
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Oxanium", cursive;
+    background-color: #100021;
+    color: #ffffff;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Wallpaper de fundo */
+body::before {
+    content: "";
+    background-image: url(../imagens/wallpaper/wallpaper\ \(fundo\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.12;
+    filter: blur(2px);
+}
+
+/* Cabeçalho Compacto */
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding: 0 16px;
+    background: linear-gradient(135deg, #5e1639, #30046e, #04596e);
+    border-bottom: 1px solid #00a2ff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.cabecalho .logo {
+    max-width: 120px;
+    filter: drop-shadow(0 0 8px #fda7ff);
+    transition: max-width 0.3s ease;
+}
+
+/* Animação de brilho */
+@keyframes brilhoMagico {
+    from {
+        box-shadow: 0 0 25px #ffa6ff99;
+    }
+    to {
+        box-shadow: 0 0 35px #a0f0ff99;
+    }
+}
+
+/* Seção principal de seleção */
+.selecao-de-personagens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    min-height: calc(100vh - 120px);
+}
+
+.selecao-de-personagens .personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0;
+    gap: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 0 25px #f0a3ff66, 0 0 50px #8ad4ff33;
+    animation: brilhoMagico 2s infinite alternate;
+}
+
+.selecao-de-personagens .personagens .titulo {
+    font-size: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffb6ff;
+    padding-bottom: 8px;
+    color: #ffe1ff;
+    text-shadow: 0 0 5px #ff99f6, 0 0 10px #7f93ff;
+}
+
+/* Lista de personagens */
+.lista-de-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.lista-de-personagens .personagem {
+    width: 90px;
+    height: 90px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(145deg, #961654, #5408be, #0689aa);
+    animation: brilhoMagico 1.5s infinite alternate;
+}
+
+.lista-de-personagens .personagem:hover {
+    transform: scale(1.12);
+    box-shadow: 0px 0px 20px 8px #ffb0ff88;
+}
+
+.lista-de-personagens .personagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.lista-de-personagens .personagem.selecionado {
+    border-color: #00a2ff;
+    border-bottom: 2px solid #00a2ff;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+/* Personagem em destaque */
+.personagem-selecionado {
+    text-align: center;
+    max-height: 850px;
+    padding: 60px;
+}
+
+.personagem-selecionado .personagem-grande {
+    width: 380px;
+    height: 380px;
+}
+
+.nome-personagem {
+    font-size: 26px;
+    color: #ffe0fd;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fface4;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 0 6px #ffa9ff;
+}
+
+.descricao-personagem {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+    max-width: 430px;
+    margin-inline: auto;
+    padding: 10px;
+    color: #ffe6ff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Rodapé */
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 0;
+    background: linear-gradient(135deg, #5e1639, #30046e, #04596e);
+    color: rgb(190, 5, 107);
+    border-top: 1px solid #00a2ff;
+}
+
+footer .github-link {
+    color: #be056b;
+    font-weight: bold;
+}
+
+footer .github-link:hover {
+    color: #0689aa;
+    text-shadow: 0 0 12px #04596e;
+}
+
+/* Animação de brilho */
+@keyframes brilhoMagico {
+    from {
+        box-shadow: 0 0 25px #ffa6ff99;
+    }
+    to {
+        box-shadow: 0 0 35px #a0f0ff99;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .selecao-de-personagens {
+        padding: 20px;
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    .selecao-de-personagens .personagens {
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    .selecao-de-personagens .personagens .titulo {
+        font-size: 18px;
+    }
+
+    .lista-de-personagens .personagem {
+        width: 80px;
+        height: 80px;
+    }
+
+    .personagem-selecionado .personagem-grande {
+        width: 350px;
+        height: 350px;
+    }
+
+    .descricao-personagem {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .cabecalho {
+        height: 70px;
+        padding: 0 14px;
+    }
+
+    .cabecalho .logo {
+        max-width: 100px;
+    }
+
+    .selecao-de-personagens {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        margin-top: 50px;
+        gap: 25px;
+    }
+
+    .selecao-de-personagens .personagens {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .lista-de-personagens {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .lista-de-personagens .personagem {
+        width: 80px;
+        height: 80px;
+    }
+
+    .personagem-selecionado .personagem-grande {
+        width: 300px;
+        height: 300px;
+    }
+
+    .descricao-personagem {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .cabecalho {
+        height: 50px;
+        padding: 0 12px;
+    }
+
+    .cabecalho .logo {
+        max-width: 80px;
+    }
+
+    .selecao-de-personagens {
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .selecao-de-personagens .personagens .titulo {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .lista-de-personagens .personagem {
+        width: 60px;
+        height: 60px;
+    }
+
+    .personagem-selecionado .personagem-grande {
+        width: 250px;
+        height: 250px;
+    }
+
+    .descricao-personagem {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .selecao-de-personagens {
+        gap: 15px;
+    }
+
+    .selecao-de-personagens .personagens {
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    .lista-de-personagens {
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .lista-de-personagens .personagem {
+        width: 55px;
+        height: 55px;
+    }
+
+    .personagem-selecionado .personagem-grande {
+        width: 220px;
+        height: 220px;
+    }
+
+    .descricao-personagem {
+        font-size: 12px;
+        padding: 0 8px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px) {
+    .lista-de-personagens .personagem {
+        width: 50px;
+        height: 50px;
+    }
+
+    .personagem-selecionado .personagem-grande {
+        width: 200px;
+        height: 200px;
+    }
+
+    .descricao-personagem {
+        font-size: 11px;
+    }
+}

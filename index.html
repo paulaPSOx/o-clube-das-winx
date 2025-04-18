@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="src/imagens/logotipo/logo-winx.png" type="image/x-icon" />
+
+    <title>O Clube das Winx</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&family=Poppins:wght@500;800&display=swap" 
+        rel="stylesheet" 
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img class="logo" src="./src/imagens/logotipo/logo-winx.png" alt="Logo Winx" />
+    </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo">Selecione um personagem</h1>
+            <ul class="lista-de-personagens">
+
+                <!-- Personagem Musa -->
+                <li class="personagem selecionado" id="musa" data-name="Musa"
+                    data-description="Musa é a fada da música. Criativa e sensível, ela usa o som como forma de combate e defesa.">
+                    <img src="./src/imagens/cards/musa.png" alt="Personagem Musa" />
+                </li>
+
+                <!-- Musa Winx -->
+                <li class="personagem" id="musa-winx" data-name="Musa Winx"
+                    data-description="Transformação mágica da Musa, com habilidades ampliadas relacionadas à música e vibrações sonoras.">
+                    <img src="./src/imagens/cards/musa-winx.png" alt="Musa Winx" />
+                </li>
+
+                <!-- Tecna -->
+                <li class="personagem" id="tecna" data-name="Tecna"
+                    data-description="Tecna é a fada da tecnologia. Inteligente e lógica, domina tudo relacionado à ciência e aparelhos eletrônicos.">
+                    <img src="./src/imagens/cards/tecna.png" alt="Personagem Tecna" />
+                </li>
+
+                <!-- Tecna Winx -->
+                <li class="personagem" id="tecna-winx" data-name="Tecna Winx"
+                    data-description="Transformação mágica da Tecna, com poder ainda maior de manipular tecnologia e dados.">
+                    <img src="./src/imagens/cards/tecna-winx.png" alt="Tecna Winx" />
+                </li>
+
+                <!-- Stella -->
+                <li class="personagem" id="stella" data-name="Stella"
+                    data-description="Stella é a fada do Sol e da Lua. Vaidosa e divertida, tem o poder de controlar a luz.">
+                    <img src="./src/imagens/cards/stella.png" alt="Personagem Stella" />
+                </li>
+
+                <!-- Stella Winx -->
+                <li class="personagem" id="stella-winx" data-name="Stella Winx"
+                    data-description="Transformação mágica da Stella, com controle avançado da luz solar e energia lunar.">
+                    <img src="./src/imagens/cards/stella-winx.png" alt="Stella Winx" />
+                </li>
+
+                <!-- Bloom -->
+                <li class="personagem" id="bloom" data-name="Bloom"
+                    data-description="Bloom é a fada do fogo do dragão. Corajosa e determinada, lidera o grupo Winx.">
+                    <img src="./src/imagens/cards/bloom.png" alt="Personagem Bloom" />
+                </li>
+
+                <!-- Bloom Winx -->
+                <li class="personagem" id="bloom-winx" data-name="Bloom Winx"
+                    data-description="Transformação mágica da Bloom, com poderes intensificados do fogo do dragão.">
+                    <img src="./src/imagens/cards/bloom-winx.png" alt="Bloom Winx" />
+                </li>
+
+                <!-- Aisha -->
+                <li class="personagem" id="aisha" data-name="Aisha"
+                    data-description="Aisha é a fada dos fluidos. Atlética e determinada, tem o poder de controlar líquidos.">
+                    <img src="./src/imagens/cards/aisha.png" alt="Personagem Aisha" />
+                </li>
+
+                <!-- Aisha Winx -->
+                <li class="personagem" id="aisha-winx" data-name="Aisha Winx"
+                    data-description="Transformação mágica da Aisha, com habilidades aprimoradas de manipulação de líquidos.">
+                    <img src="./src/imagens/cards/aisha-winx.png" alt="Aisha Winx" />
+                </li>
+
+                <!-- Flora -->
+                <li class="personagem" id="flora" data-name="Flora"
+                    data-description="Flora é a fada da natureza. Doce e gentil, tem a habilidade de controlar plantas e flores.">
+                    <img src="./src/imagens/cards/flora.png" alt="Personagem Flora" />
+                </li>
+
+                <!-- Flora Winx -->
+                <li class="personagem" id="flora-winx" data-name="Flora Winx"
+                    data-description="Transformação mágica da Flora, com maior poder sobre a flora e os elementos naturais.">
+                    <img src="./src/imagens/cards/flora-winx.png" alt="Flora Winx" />
+                </li>
+
+            </ul>
+        </section>
+
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/imagens/winx/musa.png" alt="Personagem Selecionado" />
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Musa</h2>
+                <p class="descricao-personagem" id="descricao-personagem">
+                    Musa é a fada da música. Criativa e sensível, ela usa o som como forma de combate e defesa.
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <p>
+            &copy; 2025 
+            <a href="https://github.com/paulaPSOx" target="_blank" class="github-link">PaulaPSOx</a>. 
+            Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
