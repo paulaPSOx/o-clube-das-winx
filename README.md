@@ -78,8 +78,6 @@ Reviver a magia do universo **Winx**, apresentando suas personagens icônicas co
 
 ![Preview do Projeto](./background-winx-project.png)
 
-> Ou adicione aqui prints adicionais da interface ou um gif com a interação dos cards.
-
 ---
 
 ## 🚀 Como Usar
