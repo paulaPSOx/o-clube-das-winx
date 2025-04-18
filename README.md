@@ -2,13 +2,13 @@
 
 Este projeto é uma homenagem ao mundo encantado de **Winx Club**, onde os usuários podem visualizar as personagens principais em suas **versões civis** e **transformações mágicas** como fadas. Desenvolvido com **HTML**, **CSS** e **JavaScript**, o projeto recria a atmosfera mágica e colorida da série, proporcionando uma experiência envolvente e nostálgica para os fãs.
 
-> Este projeto faz parte do desafio da comunidade [@Dev Em Dobro](https://github.com/devemdobro) e da **Guild Dev Em Dobro**, na semana da **Mapa Dev Week**.
+> Este projeto foi inspirado no desafio da comunidade [@Dev Em Dobro](https://github.com/devemdobro) e da **Guild Dev Em Dobro**, na semana da **Mapa Dev Week**.
 
 ---
 
 ## 📌 Acesse o Projeto
 
-- 🔗 **Deploy (GitHub Pages)**: [Clique aqui para visualizar o projeto](https://paulapsox.github.io/o-clube-das-winx/)
+- 🔗 **Deploy (GitHub Pages)**: [visualizar o projeto paulapsox-o-clube-das-winx](https://paulapsox.github.io/o-clube-das-winx/)
 - 📁 **Repositório no GitHub**: [https://github.com/paulaPSOx/o-clube-das-winx](https://github.com/paulaPSOx/o-clube-das-winx)
 
 ---
