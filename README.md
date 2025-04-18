@@ -1,4 +1,4 @@
-# 🌟 O Clube das Winx - Seleção de Fadas Mágicas ✨🧚‍♀️🌈
+# 🌟🌈O Clube das Winx - Seleção de Fadas Mágicas✨🧚‍♀️
 
 Este projeto é uma homenagem ao mundo encantado de **Winx Club**, onde os usuários podem visualizar as personagens principais em suas **versões civis** e **transformações mágicas** como fadas. Desenvolvido com **HTML**, **CSS** e **JavaScript**, o projeto recria a atmosfera mágica e colorida da série, proporcionando uma experiência envolvente e nostálgica para os fãs.
 
@@ -125,4 +125,4 @@ Agradeço à comunidade [@Dev Em Dobro](https://github.com/devemdobro) e à **Gu
 
 ---
 
-✨ Esperamos que você se encante com esse pedacinho do mundo mágico das **Winx**! ✨
+✨ Espero que você se encante com esse pedacinho do mundo mágico das **Winx**! ✨
